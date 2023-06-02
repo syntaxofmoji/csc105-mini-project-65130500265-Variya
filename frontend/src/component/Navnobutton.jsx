@@ -1,0 +1,33 @@
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import { Grid } from "@mui/material";
+import ModeEditIcon from "@mui/icons-material/ModeEdit";
+import "../App.css";
+
+export default function Navnobutton() {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static" sx={{ backgroundColor: "#605028" }}>
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+          {/* <Typography
+            className="roboto"
+            variant="h6"
+            component="div"
+            sx={{
+              flexGrow: 1,
+              textAlign: "center",
+            }}
+          >
+           
+            ANONYMOUS POSTCARD
+          </Typography> */}
+          <h2 style={{ flexGrow: 1, textAlign: "center", fontSize:"25px" }}>
+              ANONYMOUS POSTCARD
+            </h2>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
+}
